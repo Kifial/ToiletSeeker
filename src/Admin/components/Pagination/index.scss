@@ -1,0 +1,40 @@
+.pagination {
+  padding: 10px 0;
+  &__content {
+    display: flex;
+    justify-content: center;
+  }
+  &__pages {
+    line-height: 36px;
+    font-size: 18px;
+    color: rgb(0, 182, 212);
+    display: flex;
+    margin: 0 10px;
+    text-align: center;
+  }
+  &__item {
+    min-width: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+    &--active {
+      border: 1px solid rgb(0, 182, 212);
+    }
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+  &__arrow {
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    transition: .3s ease;
+    &:hover {
+      opacity: 0.6;
+    }
+    svg {
+      width: 100% !important;
+      height: 100% !important;
+      fill: rgb(0, 182, 212) !important;
+    }
+  }
+}

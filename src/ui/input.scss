@@ -1,0 +1,20 @@
+.ui-input {
+  line-height: 30px;
+  height: 32px;
+  padding: 0 10px;
+  border: solid #bdbdbd;
+  border-width: 0 0 2px;
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: .2s ease;
+  &--row {
+    margin-bottom: 0;
+  }
+  &--error {
+    border-color: #bd2222;
+  }
+  &:focus {
+    border-color: rgb(0, 182, 212);
+  }
+}

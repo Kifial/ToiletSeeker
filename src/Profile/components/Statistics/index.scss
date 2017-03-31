@@ -1,0 +1,31 @@
+.profile-statistics {
+  padding: 20px 0;
+  &__title {
+    font-size: 22px;
+    padding: 0 20px;
+    margin-bottom: 10px;
+  }
+  &__list {
+
+  }
+  &__list-item {
+    position: relative;
+    line-height: 42px;
+    border: solid #e0e0e0;
+    border-width: 1px 0 0;
+    display: flex;
+    &:last-child {
+      border-width: 1px 0;
+    }
+  }
+  &__list-number {
+    width: 100px;
+    text-align: center;
+    color: rgb(0, 182, 212);
+    font-weight: 700;
+    font-size: 18px;
+  }
+  &__text {
+    flex: 1 1;
+  }
+}

@@ -1,0 +1,129 @@
+.feed-item {
+  padding: 10px 15px;
+  border: solid #d0d0d0;
+  border-width: 1px 0 0;
+  display: flex;
+  &__info-box {
+    width: 80%;
+    display: flex;
+  }
+  &__avatar-box {
+    width: 42px;
+    height: 42px;
+    margin-right: 14px;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+  &__text-box {
+    flex: 1 1;
+  }
+  &__user-name {
+    color: rgb(0, 182, 212);
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &__date {
+    font-size: 14px;
+    color: #888888;
+    margin-bottom: 6px;
+  }
+  &__text {
+    font-size: 15px;
+  }
+  &__rating-box {
+    width: 20%;
+    padding: 6px 0 0;
+  }
+  &__likes-box {
+    font-size: 14px;
+    color: #444;
+    display: flex;
+    justify-content: space-around;
+  }
+  &__likes-count {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &__like-icon {
+    display: inline-block;
+    vertical-align: middle;
+    fill: #888888 !important;
+    width: 20px !important;
+    height: 20px !important;
+    margin-right: 6px;
+    cursor: pointer;
+    transition: .2s ease;
+    &:hover {
+      fill: #666666 !important;
+    }
+    &--active {
+      fill: rgb(0, 182, 212) !important;
+      &:hover {
+        fill: rgb(0, 182, 212) !important;
+        opacity: 0.8;
+      }
+    }
+  }
+  &__dislike-icon {
+    display: inline-block;
+    vertical-align: middle;
+    fill: #888888 !important;
+    width: 20px !important;
+    height: 20px !important;
+    margin-right: 6px;
+    cursor: pointer;
+    transition: .2s ease;
+    &:hover {
+      fill: #666666 !important;
+    }
+    &--active {
+      fill: rgb(255, 64, 129) !important;
+      &:hover {
+        fill: rgb(255, 64, 129) !important;
+        opacity: 0.8;
+      }
+    }
+  }
+  &__rating-fields {
+    padding: 0;
+  }
+  &__rating-field {
+    padding: 0 15px;
+    line-height: 22px;
+  }
+  &__rating-field-name {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  &__rating-field-value {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+  }
+  &__likes-line-box {
+    padding: 0 15px;
+    margin: 10px 0;
+    height: 4px;
+    width: 100%;
+  }
+  &__likes-line {
+    display: flex;
+    background-color: #bdbdbd;
+    height: 100%;
+  }
+  &__likes-line-likes {
+    background-color: rgb(0, 182, 212);
+    height: 100%;
+  }
+  &__likes-line-dislikes {
+    background-color: rgb(255, 64, 129);
+    height: 100%;
+  }
+}

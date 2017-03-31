@@ -1,0 +1,31 @@
+.create-comment-modal {
+  &__text {
+    width: 100%;
+    min-height: 140px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    resize: none;
+    border: solid #bdbdbd;
+    border-width: 0 0 2px 0;
+    transition: .2s ease;
+    &--error {
+      border-color: #bd2222;
+    }
+    &:focus {
+      border-color: rgb(0, 182, 212);
+    }
+  }
+  &__selects-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  &__select {
+    width: 50%;
+  }
+  &__select-label {
+    font-size: 16px;
+    margin: 0 15px 0 0;
+  }
+}

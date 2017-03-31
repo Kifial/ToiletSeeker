@@ -1,0 +1,17 @@
+.marker-content {
+  &__title {
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-bottom: 2px;
+  }
+  &__tags {
+    color: #666666;
+    font-size: 14px;
+    margin-bottom: 2px;
+  }
+  &__distance-to-user {
+    font-size: 14px;
+    margin-bottom: 2px;
+  }
+}

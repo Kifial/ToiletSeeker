@@ -1,0 +1,21 @@
+.map-directions-form {
+  position: fixed;
+  width: calc(100% - 20px);
+  top: 65px;
+  left: 10px;
+  background-color: #ffffff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  &__left {
+
+  }
+  &__right {
+
+  }
+  &__input-box {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+  }
+}

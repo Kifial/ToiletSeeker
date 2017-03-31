@@ -1,0 +1,16 @@
+.admin-places {
+  padding: 20px 0 0;
+  &__title-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    font-size: 24px;
+    padding: 0 20px;
+    flex: 1 1;
+    line-height: 36px;
+  }
+  &__buttons-row {
+    padding: 0 20px 0 0;
+  }
+}

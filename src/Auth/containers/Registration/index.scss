@@ -1,0 +1,41 @@
+.registration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  &__form {
+    position: absolute;
+    width: 340px;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__title {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  &__input-row {
+    input {
+      margin-bottom: 0;
+    }
+  }
+  &__submit-row {
+    text-align: center;
+  }
+  &__message-row {
+    color: #bd2222;
+    text-align: center;
+    font-size: 14px;
+    line-height: 28px;
+  }
+  &__error {
+    color: #bd2222;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    min-height: 28px;
+  }
+}

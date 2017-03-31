@@ -1,0 +1,68 @@
+.profile {
+  padding: 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  &__info-box {
+
+  }
+  &__name {
+    font-size: 24px;
+    margin-bottom: 10px;
+    input {
+      font-size: 24px;
+    }
+  }
+  &__user-info {
+    font-size: 18px;
+    color: #888;
+    margin-bottom: 20px;
+    textarea {
+      width: 400px;
+      height: 140px;
+      font-size: 18px;
+      color: #888888;
+      font-family: 'Roboto', sans-serif;
+      resize: none;
+    }
+  }
+  &__avatar-box {
+    position: relative;
+    width: 180px;
+  }
+  &__avatar {
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  }
+  &__fake-avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    img {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      height: 100%;
+      transform: translate(-50%, 0);
+    }
+  }
+  &__file-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 180px;
+    opacity: 0;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  &__statistics-button-box {
+    padding: 20px 0 0;
+  }
+}
