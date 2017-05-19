@@ -39,7 +39,7 @@ router.post('/registration', (req, res) => {
       res.sendStatus(202);
     }
   });
-});s
+});
 sa
 router.post('/login', (req, res) => {
   User.findOne({
