@@ -40,7 +40,7 @@ router.post('/registration', (req, res) => {
     }
   });
 });
-sa
+
 router.post('/login', (req, res) => {
   User.findOne({
     login: req.body.login,
