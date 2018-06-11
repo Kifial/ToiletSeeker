@@ -17,6 +17,10 @@ const propTypes = {
 class FeedList extends React.Component {
   constructor(props) {
     super(props);
+    this.handleLike = this.handleLike.bind(this)
+    this.handleDislike = this.handleDislike.bind(this)
+    this.handleRemoveLike = this.handleRemoveLike.bind(this)
+    this.handleRemoveDislike = this.handleRemoveDislike.bind(this)
   }
   handleLike(id) {
     this.props.dispatch(likeComment(id));
