@@ -1,5 +1,4 @@
 const express = require('express');
-const port = 8080;
 const jwtSecret = require('./config').jwtSecret;
 const fs = require('fs');
 const path = require('path');
@@ -12,7 +11,7 @@ const expressJWT = require('express-jwt');
 const mongoose = require('mongoose');
 const router = require('./routes');
 
-mongoose.connect('mongodb://localhost:27017/ts');
+mongoose.connect('mongodb://gmkifi:k9atadm0f1pj@ds123224.mlab.com:23224/toiletseeker');
 
 const app = express();
 app.use(bodyParser.json());
@@ -40,6 +39,6 @@ app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, '..', 'index.html'));
 });
 
-const server = app.listen(port, () => {
-  console.log('Listening on port:' + port);
+const server = app.listen((process.env.PORT || 8080), () => {
+  console.log('Listening on port:');
 });
